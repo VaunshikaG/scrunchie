@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* acc form */
+
+.acc {
+    border: 2px solid #1d1b2ff5;
+    border-radius: 5px;
+    margin: 80px 200px;
+    padding: 40px;
+    background: lavender;
+}
+
+.acc .title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.acc .title h2 {
+    margin: 0px;
+    font-weight: 500;
+    padding-bottom: 1%;
+    color: #1d1b2ff5;
+}
+
+.pg {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pg form {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    color: #1d1b2ff5;
+}
+
+.pg form input {
+    display: flex;
+    width: 60%;
+    border: 1px solid black;
+    padding: 2px;
+    outline: none;
+    font-size: 0.9em;
+    font-weight: 400;
+    letter-spacing: 1.3px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.pg form input[type="checkbox"] {
+    display: inline-block;
+    width: 10%;
+    height: 15px;
+    margin: 0;
+}
+
+.pg form input[type="checkbox"]:hover {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.forget {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #1d1b2ff5;
+}
+
+.pg .sbtn {
+    background-color: #1d1b2ff5;
+    width: 60%;
+    justify-content: center;
+    align-content: center;
+    padding: 5px 15px;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+
+.pg .sbtn a {
+    text-decoration: none;
+    color: white;
+}
+
+.pg .sbtn:hover {
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+
