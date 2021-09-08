@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrunchie</title>
     <link rel="stylesheet" href="site.css">
-    <link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -22,55 +21,7 @@
                         <li><a href="site.html">Home</a></li>
                         <li><a href="site.html">About</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <button type="button" class="collapsible">Account</button>
-                        <div class="content">
-                            <div class="wrapper">
-                                <div class="title-text">
-                                    <div class="title login">Login Form</div>
-                                    <div class="title signup">Signup Form</div>
-                                </div>
-                                <div class="form-container">
-                                    <div class="slide-controls">
-                                        <input type="radio" name="slide" id="login" checked>
-                                        <input type="radio" name="slide" id="signup">
-                                        <label for="login" class="slide login">Login</label>
-                                        <label for="signup" class="slide signup">Signup</label>
-                                        <div class="slider-tab"></div>
-                                    </div>
-                                    <div class="form-inner">
-                                        <form action="#" class="login">
-                                            <div class="field">
-                                                <input type="text" placeholder="Email Address" required>
-                                            </div>
-                                            <div class="field">
-                                                <input type="password" placeholder="Password" required>
-                                            </div>
-                                            <div class="pass-link"><a href="#">Forgot password?</a></div>
-                                            <div class="field btn">
-                                                <div class="btn-layer"></div>
-                                                <input type="submit" value="Login">
-                                            </div>
-                                            <div class="signup-link">Not a member? <a href="">Signup now</a></div>
-                                        </form>
-                                        <form action="#" class="signup">
-                                            <div class="field">
-                                                <input type="text" placeholder="Email Address" required>
-                                            </div>
-                                            <div class="field">
-                                                <input type="password" placeholder="Password" required>
-                                            </div>
-                                            <div class="field">
-                                                <input type="password" placeholder="Confirm password" required>
-                                            </div>
-                                            <div class="field btn">
-                                                <div class="btn-layer"></div>
-                                                <input type="submit" value="Signup">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <li><a href="acc.html">Account</a></li>
                     </ul>
                 </nav>
                 <div class="bag">
@@ -89,12 +40,8 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quasi soluta <br> excepturi corporis
                 voluptatum provident ratione voluptate nesciunt ab rerum.</p>
         </div>
-        <div class="col-2">
-            <img src="bg.jpg">
-        </div>
     </div>
-    </div>
-    </div>
+    
 
     <!-- featured -->
     <div id="about" class="categories">
@@ -119,8 +66,6 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
 
 
 
@@ -135,41 +80,7 @@
         </div>
     </footer>
 
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        }
-
-        const loginText = document.querySelector(".title-text .login");
-        const loginForm = document.querySelector("form.login");
-        const loginBtn = document.querySelector("label.login");
-        const signupBtn = document.querySelector("label.signup");
-        const signupLink = document.querySelector("form .signup-link a");
-        signupBtn.onclick = (() => {
-            loginForm.style.marginLeft = "-50%";
-            loginText.style.marginLeft = "-50%";
-        });
-        loginBtn.onclick = (() => {
-            loginForm.style.marginLeft = "0%";
-            loginText.style.marginLeft = "0%";
-        });
-        signupLink.onclick = (() => {
-            signupBtn.click();
-            return false;
-        });
-
-    </script>
+    
 
 </body>
 
